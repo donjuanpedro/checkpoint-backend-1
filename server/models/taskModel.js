@@ -1,15 +1,27 @@
+// let mongoose = require("mongoose");
+
+// const schema = new mongoose.Schema({
+    
+//     task: {
+//         required: true,
+//         type: String
+//     },
+//     date: {
+//         required: true,
+//         type: String
+//     }
+// });
+
+// module.exports = mongoose.model("Task", schema);
 let mongoose = require("mongoose");
 
-const schema = new mongoose.Schema({
-    
+const taskSchema = new mongoose.Schema({
     task: {
-        required: true,
         type: String
     },
     date: {
-        required: true,
         type: String
     }
 });
 
-module.exports = mongoose.model("Task", schema);
+module.exports = mongoose.model("Task", taskSchema);

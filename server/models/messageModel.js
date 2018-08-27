@@ -1,20 +1,32 @@
+// let mongoose = require("mongoose");
+
+// const schema = new mongoose.Schema({
+    
+//     name: {
+//         required: true,
+//         type: String
+//     },
+//     date: {
+//         type: String
+//     },
+//     message: {
+//         type: String
+//     }
+// });
+
+// module.exports = mongoose.model("Message", schema);
 let mongoose = require("mongoose");
 
-const schema = new mongoose.Schema({
-    
+const messageSchema = new mongoose.Schema({
     name: {
-        required: true,
         type: String
     },
     date: {
-        required: true,
         type: String
     },
-    
     message: {
-        required: true,
         type: String
     }
 });
 
-module.exports = mongoose.model("Message", schema);
+module.exports = mongoose.model("Message", messageSchema);
